@@ -72,17 +72,17 @@
    }
   }
 
-   class Describe {
-      public static function describtor(){
-         $persegi = new Persegi();
-         $persegipanjang = new PersegiPanjang();
-         $lingkaran = new Lingkaran();
-      }
-   }
-  
+  class Describe {
+    public static function describtor(){
         $persegi = new Persegi();
+        echo "Bangun datar ini adalah persegi. yang memiliki luas $persegi->area() dan keliling $persegi->circumference";
         $persegipanjang = new PersegiPanjang();
+        echo "Bangun datar ini adalah persegi panjang. yang memiliki luas $persegipanjang->area() dan keliling $persegipanjang->circumference";
         $lingkaran = new Lingkaran();
+        echo "Bangun datar ini adalah Lingkaran. yang memiliki luas $lingkaran->area() dan keliling $lingkaran->circumference";
+    }
+ }
+         $describe = new Describe();
 
 
 ?>
