@@ -8,13 +8,7 @@
     abstract static protected function describtor();
 
   }
- class Describe {
-    public static function describtor(){
-        $persegi = new Persegi();
-        $persegipanjang = new PersegiPanjang();
-        $lingkaran = new Lingkaran();
-    }
- }
+ 
 
 
   class Persegi extends BangunDatar{
@@ -77,6 +71,14 @@
        echo "Bangun datar ini adalah Lingkaran. yang memiliki luas $lingkaran->area() dan keliling $lingkaran->circumference";
    }
   }
+
+   class Describe {
+      public static function describtor(){
+         $persegi = new Persegi();
+         $persegipanjang = new PersegiPanjang();
+         $lingkaran = new Lingkaran();
+      }
+   }
   
         $persegi = new Persegi();
         $persegipanjang = new PersegiPanjang();
